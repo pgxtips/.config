@@ -1,0 +1,8 @@
+*
+/nvim/node_modules/
+/nvim/lazy-lock.json
+
+!/nvim/
+!.xinitrc
+!.bashrc
+!README.md
