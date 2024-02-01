@@ -11,6 +11,13 @@ This repository contains my Neovim configuration, tailored to suit my workflow. 
 - **Color Scheme**: Thoughtfully selected color scheme for a pleasing coding experience.
 - **Config Organization**: Well-organized configuration for easy maintenance.
 
+## Prerequisites 
+
+- Have NodeJS installed
+- Have xclip installed
+- Have ripgrep installed
+
+
 ## Getting Started
 
 To use this configuration on another machine, follow these steps:

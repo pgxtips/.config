@@ -3,7 +3,10 @@
 /nvim/lazy-lock.json
 
 !/nvim/
-!.xinitrc
+!/i3/
+!/polybar/
+!/alacritty/
+!/tmux/
 !.bashrc
+!/scripts/
 !README.md
-
