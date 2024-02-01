@@ -1,12 +1,4 @@
-*
 /nvim/node_modules/
 /nvim/lazy-lock.json
-
-!/nvim/
-!/i3/
-!/polybar/
-!/alacritty/
-!/tmux/
-!.bashrc
-!/scripts/
-!README.md
+/github-copilot
+/gh
