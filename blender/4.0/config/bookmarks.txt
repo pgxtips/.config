@@ -1,0 +1,4 @@
+[Bookmarks]
+[Recent]
+/home/brandon/Documents/Dev/portfolio/public/models/japanese_temple/
+/home/brandon/Documents/Dev/portfolio/public/models/japanese_temple/textures/

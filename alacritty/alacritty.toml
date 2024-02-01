@@ -1,0 +1,14 @@
+[window] 
+decorations="None" 
+opacity = 0.93
+[font]
+normal = { family = "0xProto Nerd Font", style = "Regular" }
+size=22
+
+
+[keyboard]
+bindings=[
+   { key = "J", mods = "Super", chars="\u200b"},
+   { key = "K", mods = "Super", chars = "\u001b[1;9E"},
+   { key = "L", mods = "Super", chars = "\u001b[1;9F"},
+]
