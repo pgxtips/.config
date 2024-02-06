@@ -59,3 +59,10 @@ vim.o.colorcolumn = "80"
 
 --netrw on start
 vim.cmd[[autocmd VimEnter * :Explore]]
+
+--stop random files on typo from being created
+vim.cmd[[
+    augroup MySave
+    autocmd BufWriteCmd * :w % | set nomodified
+    augroup END
+]]

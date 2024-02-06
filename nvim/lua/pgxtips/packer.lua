@@ -65,7 +65,17 @@ return require('packer').startup(function(use)
   ------------- GITHUB INTEGRATION ------------
   use("tpope/vim-fugitive");
 
+
+  ---------------- VIM DEBUGGER ---------------
+  use "mfussenegger/nvim-dap"
+  use "rcarriga/nvim-dap-ui"
+  use "theHamsta/nvim-dap-virtual-text"
+  use "nvim-telescope/telescope-dap.nvim"
+
+
+  ------------- VIM PRACTICE GAME -------------
   use("ThePrimeagen/vim-be-good");
 
 end)
+
 
