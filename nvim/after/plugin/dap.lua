@@ -24,7 +24,7 @@ dap.configurations.php = {
 -- Keybinds
 -- start debugger
 vim.keymap.set("n", '<leader>dc', function() require('dap').continue() end)
-vim.keymap.set("n", '<leader>bb', function() require('dap').toggle_breakpoint() end)
+vim.keymap.set("n", '<leader>b', function() require('dap').toggle_breakpoint() end)
 vim.keymap.set("n", '<leader>n', function() require('dap').step_over() end)
 
 

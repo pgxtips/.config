@@ -14,6 +14,10 @@ vim.o.expandtab = true
 vim.o.autoindent = true
 vim.o.smartindent = true
 
+--turn on smart case searchs
+vim.o.smartcase = true
+vim.o.ignorecase = true
+
 --better colour support
 vim.o.termguicolors = true
 
