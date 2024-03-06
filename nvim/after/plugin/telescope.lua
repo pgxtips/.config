@@ -33,3 +33,4 @@ vim.keymap.set('n', '<leader>fo', function() builtin.live_grep({grep_open_files=
 vim.keymap.set('n', '<leader>ft', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>fr', builtin.lsp_references, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+

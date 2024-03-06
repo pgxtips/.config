@@ -48,4 +48,3 @@ end
 
 -- Set up key mappings only if the debugger is stopped at a breakpoint
 vim.keymap.set("n", '<leader>k', openScopesWidget)
-vim.keymap.set("n", '<leader>q', closeScopeWidget)

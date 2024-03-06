@@ -9,3 +9,6 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 --use gp to select pasted text
 vim.keymap.set("n", "gp", "`[v`]")
+
+-- open quickfix list
+vim.keymap.set("n", "<leader>q", vim.diagnostic.setqflist)
