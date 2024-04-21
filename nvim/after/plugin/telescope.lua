@@ -15,8 +15,6 @@ telescope.setup({
         },
         file_ignore_patterns = {
             "node_modules",
-            "dist",
-            "build",
             "target",
             "vendor",
             "yarn.lock",

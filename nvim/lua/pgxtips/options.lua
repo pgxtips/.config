@@ -62,7 +62,7 @@ vim.o.termguicolors = true
 vim.o.colorcolumn = "80"
 
 --netrw on start
-vim.cmd[[autocmd VimEnter * :Explore]]
+--vim.cmd[[autocmd VimEnter * :Explore]]
 
 --stop random files on typo from being created
 vim.cmd[[
