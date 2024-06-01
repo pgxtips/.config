@@ -28,7 +28,30 @@ lsp_zero.on_attach(function(client, bufnr)
   lsp_zero.default_keymaps({buffer = bufnr})
 
   vim.keymap.set("n", "<leader>rn", function() vim.lsp.buf.rename() end, opts)
+  vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end, opts)
 end)
+
+local cmp = require('cmp')
+require('luasnip.loaders.from_vscode').lazy_load()
+require("luasnip").filetype_extend("javascript", { "jsdoc" })
+require("luasnip").filetype_extend("php", { "phpdoc" })
+
+cmp.setup({
+    preselect = 'none',
+    completion = {
+        completeopt = 'menu,menuone,noinsert,noselect'
+    },
+    sources = {
+        {name = 'nvim_lsp'},
+        {name = 'luasnip'},
+    },
+    mapping = {
+        ['<Space>'] = cmp.mapping.confirm({select = false}),
+        ['<Up>'] = cmp.mapping.select_prev_item({behavior = 'select'}),
+        ['<Down>'] = cmp.mapping.select_next_item({behavior = 'select'}),
+    },
+})
+
 
 lsp_zero.setup()
 

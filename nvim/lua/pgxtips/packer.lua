@@ -41,6 +41,10 @@ return require('packer').startup(function(use)
     use("mbbill/undotree")
 
 
+    ----------------- TROUBLE ------------------
+    -- for quickfix lsp support (diagnostics list)
+    use("folke/trouble.nvim")
+
     ----------------- LSP ZERO -----------------
     use {
         'VonHeikemen/lsp-zero.nvim',
@@ -51,9 +55,11 @@ return require('packer').startup(function(use)
             -- LSP Support
             {'neovim/nvim-lspconfig'},
             -- Autocompletion
-            {'hrsh7th/nvim-cmp'},
-            {'hrsh7th/cmp-nvim-lsp'},
-            {'L3MON4D3/LuaSnip'},
+            {'hrsh7th/nvim-cmp'},     -- Required
+            {'hrsh7th/cmp-nvim-lsp'}, -- Required
+            {'L3MON4D3/LuaSnip'},     -- Required
+            {'saadparwaiz1/cmp_luasnip'}, -- Required
+            {'rafamadriz/friendly-snippets'}, -- Required,
         }
     }
 

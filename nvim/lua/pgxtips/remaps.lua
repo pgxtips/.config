@@ -27,29 +27,30 @@ vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww ~/.config/scripts/tmux-sess
 --- Quickfix list
 -------------------
 
+
 -- Function to set up concealment for the quickfix list
-local function setup_quickfix_concealment()
-    vim.cmd[[
-        syntax match ConcealedDetails /\v^[^|]*\|[^|]*\| / conceal
-        setlocal conceallevel=2
-        setlocal concealcursor=nvic
-    ]]
-end
-
-local function open_qf_list()
-    vim.diagnostic.setqflist()
-    setup_quickfix_concealment()
-end
-
--- open quickfix list
-vim.keymap.set("n", "<leader>q", open_qf_list)
-
--- Map j and k to navigate through the quickfix list only when it's open
-vim.cmd[[
-    augroup QuickFix                                
-        au FileType qf nnoremap <buffer> j j<cr><c-w>p 
-        au FileType qf noremap <buffer> k k<cr><c-w>p  
-        au FileType qf nnoremap <buffer> <CR> <CR><c-w>p:cclose<CR>
-    augroup END                                     
-]]
+-- local function setup_quickfix_concealment()
+--     vim.cmd[[
+--         syntax match ConcealedDetails /\v^[^|]*\|[^|]*\| / conceal
+--         setlocal conceallevel=2
+--         setlocal concealcursor=nvic
+--     ]]
+-- end
+-- 
+-- local function open_qf_list()
+--     vim.diagnostic.setqflist()
+--     setup_quickfix_concealment()
+-- end
+-- 
+-- -- open quickfix list
+-- vim.keymap.set("n", "<leader>q", open_qf_list)
+-- 
+-- -- Map j and k to navigate through the quickfix list only when it's open
+-- vim.cmd[[
+--     augroup QuickFix                                
+--         au FileType qf nnoremap <buffer> j j<cr><c-w>p 
+--         au FileType qf noremap <buffer> k k<cr><c-w>p  
+--         au FileType qf nnoremap <buffer> <CR> <CR><c-w>p:cclose<CR>
+--     augroup END                                     
+-- ]]
 

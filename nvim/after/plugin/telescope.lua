@@ -7,14 +7,9 @@ telescope.setup({
         layout_config = {
             preview_cutoff = 10,
         },
-        mappings = {
-            n = {
-                -- normal mode + q = actions.close 
-                ["q"] = actions.close,
-            },
-        },
         file_ignore_patterns = {
             "node_modules",
+            "dist",
             "target",
             "vendor",
             "yarn.lock",

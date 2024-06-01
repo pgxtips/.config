@@ -65,8 +65,8 @@ vim.o.colorcolumn = "80"
 --vim.cmd[[autocmd VimEnter * :Explore]]
 
 --stop random files on typo from being created
-vim.cmd[[
-    augroup MySave
-    autocmd BufWriteCmd * :w % | set nomodified
-    augroup END
-]]
+-- vim.cmd[[
+--     augroup MySave
+--     autocmd BufWriteCmd * :w % | set nomodified
+--     augroup END
+-- ]]
