@@ -201,3 +201,13 @@ for_window [class=".*"] border pixel 3
 exec_always nitrogen --restore
 exec_always picom --config ~/.config/i3/.picom.conf
 # exec_always --no-startup-id ~/.config/i3/polybar.sh &
+
+# Disable screen blanking
+exec --no-startup-id xset s off
+
+# Disable DPMS (Energy Star features)
+exec --no-startup-id xset -dpms
+
+# Prevent the screen from blanking due to inactivity
+exec --no-startup-id xset s noblank
+
